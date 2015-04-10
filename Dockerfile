@@ -9,4 +9,4 @@ RUN service zookeeper stop
 RUN apt-get -y remove --purge zookeeper
 RUN echo manual > /etc/init/mesos-master.override
 
-CMD ["mesos-slave", "--master=10.0.2.15:5050"]
+CMD ["mesos-slave", "--master=172.19.8.101:5050"]
